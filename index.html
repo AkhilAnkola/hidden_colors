@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hidden_colors</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="abc">
+		<section>
+			
+		</section>
+	</div>
+
+	<div>
+		<!--Other items-->
+	</div>
+
+	<script type="text/javascript">
+		var pos = document.documentElement;
+		pos.addEventListener("mousemove", e => {
+			pos.style.setProperty('--x', e.clientX + "px");
+			pos.style.setProperty('--y', e.clientY + "px");
+		})
+	</script>
+</body>
+</html>
